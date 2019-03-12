@@ -127,7 +127,7 @@ public class Topic09_UserInteraction {
 
 		WebElement sourceElement = driver.findElement(By.xpath("//div[@id = 'draggable']"));
 		WebElement targetElement = driver.findElement(By.xpath("//div[@id = 'droptarget']"));
-		Action.DragAndDrop(sourceElement, targetElement).build().perform();
+//		Action.DragAndDrop(sourceElement, targetElement).build().perform();
 
 		Assert.assertTrue(driver.findElement(By.xpath("//div[@id = 'droptarget' and text()='You did great!']")).isDisplayed());
 
